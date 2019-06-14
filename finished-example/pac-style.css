@@ -1,0 +1,64 @@
+/* side notes of css - You go from larger scale / scope to smaller scale / scope
+This means you declare your CSS declarations of things like body or outer divs first! then below those you declare the css declarations of the nested elements */
+
+#pac-body{
+    background: red;
+}
+/* why isn't pac-man's body red? */
+
+#pac-body{
+    position: relative;
+    background: yellow;
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    border: 5px solid black;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 10;
+}
+
+#pac-eye{
+    position: absolute;
+    left: 40%;
+    top: 15%;
+    height: 50px;
+    width: 50px;
+    background: black;
+    border-radius: 50%;
+}
+
+#pac-mouth{
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    background: white;
+    margin-left: 65%;
+    border: 5px solid black;
+    transform: rotate(45deg);
+}
+
+#pac-mouth-2{
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    background: white;;
+    top: 2.5%;
+    left: 58.69%;
+    transform: rotate(45deg);
+    z-index: 15;
+}
+
+#fire{
+    margin-right: 100px;
+    display: none;
+    
+}
+
+#fire-ball-jutsu{
+    font-size: 30px;
+}
+
+#fire-ball-jutsu:hover + #fire{
+    display: block;
+}

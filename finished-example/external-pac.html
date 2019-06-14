@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>My external css pacman</title>
+        
+        <link rel="shortcut icon" type="image/png" href="https://cdn.iconscout.com/icon/premium/png-256-thumb/pacman-58-684542.png"> 
+        <link rel="stylesheet" type="text/css" href="pac-style.css">
+        
+        <style>
+            pac-body{
+                background: red;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div id="pac-body">
+            <div id="pac-eye"></div>
+            <div id="pac-mouth"></div>
+        </div>
+        <div id="pac-mouth-2">
+        </div>
+        
+        
+        <p id="fire-ball-jutsu">
+            Hover over me to attack!!
+        </p>
+        
+        <!--Inline css always takes precedence over external css-->
+        <img id="fire" style="position: absolute; top: 200px; left: 600px; z-index: 30; height: 150px; width: 200px;" src="assets/fireball.jpg"/>
+    </body>
+</html>
+
+
+<!-- we can talk about scalability of web-pages and how css plays an important role in this - use the deforming of pacman to highlight this! -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Think of them as the last one always takes priority! whether its last stated within the external css file, or as a last last resort - placed inline in the html file -->
+
+
+<!-- Some recap - style is an attribute! of an element -->

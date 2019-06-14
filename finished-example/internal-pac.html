@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+    
+    <head>
+        <title>CSS Pacman!</title>
+        <!--Recommended IF using internal - to place style tags in head -->
+        <style>
+            #pac-body{
+                position: relative;
+                background: yellow;
+                height: 500px;
+                width: 500px;
+                margin: auto;
+                border: 5px solid black;
+                border-radius: 50%;
+                overflow: hidden;
+                z-index: 10;
+            }
+            
+            #pac-eye{
+                position: absolute;
+                left: 40%;
+                top: 15%;
+                height: 50px;
+                width: 50px;
+                background: black;
+                border-radius: 50%;
+            }
+            
+            #pac-mouth{
+                position: absolute;
+                height: 500px;
+                width: 500px;
+                background: white;
+                margin-left: 65%;
+                border: 5px solid black;
+                transform: rotate(45deg);
+            }
+            
+            #pac-mouth-2{
+                position: absolute;
+                height: 500px;
+                width: 500px;
+                background: white;;
+                top: 2.5%;
+                left: 58.69%;
+                transform: rotate(45deg);
+                z-index: 15;
+            }
+        </style>
+        
+        <link rel="shortcut icon" type="image/png" href="https://cdn.iconscout.com/icon/premium/png-256-thumb/pacman-58-684542.png">
+    </head>
+    
+    <body>
+        <div id="pac-body">
+            <div id="pac-eye"></div>
+            <div id="pac-mouth"></div>
+        </div>
+        <div id="pac-mouth-2">
+        </div>
+    </body>
+
+</html>
+
+
+
+
+
+<!-- we can talk about scalability of web-pages and how css plays an important role in this - use the deforming of pacman to highlight this! -->

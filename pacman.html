@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+            #pac-body{
+                height: 400px;
+                width: 400px;
+                margin: auto;
+                background: yellow;
+                border-radius: 50%;
+                position: relative;
+                border: 1px solid black;
+                overflow: hidden;
+            }
+
+            #pac-eye{
+                background: black;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                margin-left: 20%;
+                margin-top: 30%;
+                position: absolute;
+            }
+
+            #pac-mouth{
+                height: 300px;
+                width: 300px;
+                background: white;
+                transform: rotate(45deg);
+                margin-left: 60%;
+                margin-top: 10%;
+                border: 1px solid black;
+            }
+
+            #pac-mouth-2{
+                height: 300px;
+                width: 300px;
+                transform: rotate(45deg);
+                background: green;
+                position: absolute;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="pac-body">
+            <div id="pac-eye"></div>
+            <div id="pac-mouth"></div>
+        </div>
+
+        <div id="pac-mouth-2"></div>
+    </body>
+</html>
